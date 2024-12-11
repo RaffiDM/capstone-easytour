@@ -72,8 +72,8 @@ Indonesia's tourism potential is vast and largely unexplored. Easytour aims to:
 ## 🔗 Project Resources
 
 - [Main Repository](/)
-- [Android Development Branch](/)
-- [Cloud Computing Branch](/)
+- [Android Development Branch](https://github.com/RaffiDM/capstone-easytour/tree/Mobile-Development)
+- [Cloud Computing Branch](https://github.com/RaffiDM/capstone-easytour/tree/Cloud-Computing)
 - [Machine Learning Branch](https://github.com/RaffiDM/capstone-easytour/tree/Machine-Learning)
 
 ## 🙏 Acknowledgments
