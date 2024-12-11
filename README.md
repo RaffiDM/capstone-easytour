@@ -43,7 +43,7 @@ In our project is divided into four branches.
 1. [main](/)
 2. [android-development](/)
 3. [cloud-computing](/)
-4. [machine-learning](/)
+4. [machine-learning](https://github.com/RaffiDM/capstone-easytour/tree/Machine-Learning)
 
 # Getting Started
 
