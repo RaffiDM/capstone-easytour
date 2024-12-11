@@ -1,4 +1,4 @@
-# 🌴 Easytour App 🗺️
+# ✈️ Easytour App 🌍 
 
 <div align="center">
   <img src="Logo/Easytour Logo 2.png" alt="Easytour Logo" width="300">
