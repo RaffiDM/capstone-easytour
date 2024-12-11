@@ -145,9 +145,9 @@ def get_recommendations_nn(place_name, tourism_df, model, tfidf_vectorizer, labe
     
     return detailed_recommendations, predicted_category, category_probs
 
-@app.route('/')
-def home():
-    return render_template('index.html')
+# @app.route('/')
+# def home():
+#     return render_template('index.html')
 
 @app.route('/predict', methods=['POST'])
 def predict():
