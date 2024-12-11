@@ -34,7 +34,7 @@ Indonesia's tourism potential is vast and largely unexplored. Easytour aims to:
 | Souw Timotius Alvin Ferdinand | M233B4KY4197 | Machine Learning |
 | Richard Fernando Arya Mulyadi | C233B4KY3811 | Cloud Computing |
 | Michael Johan Handoko | C233B4KY2483 | Cloud Computing |
-| Nathanael Chrystian Prasetyo | A233B4KY3268 | Android Development |
+| Nathanael Chrystian Prasetyo | A233B4KY3268 | Mobile Development |
 
 ## 🔧 Technologies Powering Easytour
 
