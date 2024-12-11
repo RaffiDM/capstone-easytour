@@ -1,4 +1,4 @@
-# Indonesian Tourism Recommendation System
+# Easytour Model
 [Dataset Link](https://www.kaggle.com/datasets/aprabowo/indonesia-tourism-destination)
 
 ## Project Overview
