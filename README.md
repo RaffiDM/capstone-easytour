@@ -8,6 +8,11 @@
 
 **Easytour** is a revolutionary travel application designed to transform tourism experiences in Indonesia by uncovering hidden gems and connecting travelers with unique destinations.
 
+<div align="center">
+  <img src="Logo/Mock1.png" alt="Easytour Mockup 1" style="max-width: 100%; height: auto; margin: 10px;">
+  <img src="Logo/Mock2.png" alt="Easytour Mockup 2" style="max-width: 100%; height: auto; margin: 10px;">
+</div>
+
 ### 💡 Our Mission
 
 Indonesia's tourism potential is vast and largely unexplored. Easytour aims to:
