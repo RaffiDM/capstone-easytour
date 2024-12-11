@@ -23,18 +23,18 @@ Indonesia's tourism potential is vast and largely unexplored. Easytour aims to:
 - **Favorite Destinations**: Save and plan your dream trips
 - **Detailed Information**: In-depth insights about tourist attractions
 
-## 👥 Our Dream Team
+## 👥 Our Team
 
 ### Team ID: C242-PS466
 
 | Name | Role | Specialization |
 |------|------|----------------|
-| Faiz Noor Adhytia | 🧠 ML Specialist | Machine Learning |
-| Raffi Dzaky Mahendra | 🔬 ML Researcher | Machine Learning |
-| Souw Timotius Alvin Ferdinand | 📊 ML Engineer | Machine Learning |
-| Richard Fernando Arya Mulyadi | ☁️ Cloud Architect | Cloud Computing |
-| Michael Johan Handoko | 🌐 Cloud Developer | Cloud Computing |
-| Nathanael Chrystian Prasetyo | 📱 Mobile Developer | Android Development |
+| Faiz Noor Adhytia | M233B4KY1368 | Machine Learning |
+| Raffi Dzaky Mahendra | M233B4KY3577 | Machine Learning |
+| Souw Timotius Alvin Ferdinand | M233B4KY4197 | Machine Learning |
+| Richard Fernando Arya Mulyadi | C233B4KY3811 | Cloud Computing |
+| Michael Johan Handoko | C233B4KY2483 | Cloud Computing |
+| Nathanael Chrystian Prasetyo | A233B4KY3268 | Android Development |
 
 ## 🔧 Technologies Powering Easytour
 
