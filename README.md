@@ -1,93 +1,87 @@
-<br />
-<p align="center">
-  <a href="#">
-    <img src="Logo/Easytour Logo 2.png">
-  </a>
-</p>
-<br>
+# 🌴 Easytour App 🗺️
 
-# Easytour App
+<div align="center">
+  <img src="Logo/Easytour Logo 2.png" alt="Easytour Logo" width="300">
+</div>
 
-A travel application designed to enhance the tourism experience in Indonesia by helping users discover hidden gems alongside mainstream destinations. Our platform uses advanced machine learning algorithms to provide personalized and accurate recommendations, aiming to boost local economies and enrich user experiences.
+## 🌟 Project Overview
 
-# About The Project
-Indonesia's tourism sector plays a crucial role in the national economy, yet many destinations remain underexplored. Easytour bridges this gap by leveraging an advanced content-based filtering approach powered by neural networks. This algorithm analyzes user preferences and destination attributes to provide personalized recommendations, ensuring users discover hidden gems alongside popular spots. By promoting lesser-known destinations, Easytour supports sustainable tourism, enriches travel experiences, and contributes to the growth of Indonesia's tourism sector and local economies.
+**Easytour** is a revolutionary travel application designed to transform tourism experiences in Indonesia by uncovering hidden gems and connecting travelers with unique destinations.
 
-<p align="center">
-	<!-- <img src="logo/Splash.png" width="25%"> &nbsp; &nbsp; &nbsp;
-	<img src="logo/Homeipohn.png" width="25%"> &nbsp; &nbsp; &nbsp;
-	<img src="logo/rekomendasi.png" width="25%"> -->
-</p>
+### 💡 Our Mission
 
-# Team Members
+Indonesia's tourism potential is vast and largely unexplored. Easytour aims to:
+- 🔍 Discover lesser-known destinations
+- 🤖 Leverage advanced machine learning algorithms
+- 💼 Support local economies
+- 🌍 Promote sustainable tourism
 
-## Team ID : C242-PS466
+## 🚀 Key Features
 
-<br>
+- **Personalized Recommendations**: AI-powered destination suggestions
+- **Comprehensive Filters**: Search by city, price, and rating
+- **Favorite Destinations**: Save and plan your dream trips
+- **Detailed Information**: In-depth insights about tourist attractions
 
-| Name                           | Student ID | Path                |
-| -------------------------------| ---------- | ------------------- |
-| Faiz Noor Adhytia              |M233B4KY1368| Machine Learning    |
-| Raffi Dzaky Mahendra           |M233B4KY3577| Machine Learning    |
-| Souw Timotius Alvin Ferdinand  |M233B4KY4197| Machine Learning    |
-| Richard Fernando Arya Mulyadi  |C233B4KY3811| Cloud Computing     |
-| Michael Johan Handoko          |C233B4KY2483| Cloud Computing     |
-| Nathanael Chrystian Prasetyo   |A233B4KY3268| Mobile Development  |
+## 👥 Our Dream Team
 
-<br>
+### Team ID: C242-PS466
 
-# Resource
+| Name | Role | Specialization |
+|------|------|----------------|
+| Faiz Noor Adhytia | 🧠 ML Specialist | Machine Learning |
+| Raffi Dzaky Mahendra | 🔬 ML Researcher | Machine Learning |
+| Souw Timotius Alvin Ferdinand | 📊 ML Engineer | Machine Learning |
+| Richard Fernando Arya Mulyadi | ☁️ Cloud Architect | Cloud Computing |
+| Michael Johan Handoko | 🌐 Cloud Developer | Cloud Computing |
+| Nathanael Chrystian Prasetyo | 📱 Mobile Developer | Android Development |
 
-In our project is divided into four branches.
+## 🔧 Technologies Powering Easytour
 
-1. [main](/)
-2. [android-development](/)
-3. [cloud-computing](/)
-4. [machine-learning](https://github.com/RaffiDM/capstone-easytour/tree/Machine-Learning)
+### Machine Learning
+- 🐍 Python
+- 🤖 TensorFlow
 
-# Getting Started
+### Mobile Development
+- 💻 Kotlin
 
-- **Prerequisites**
+### Cloud Infrastructure
+- ☁️ Google Cloud Platform
 
-  1.  Android
-  2.  Internet connection
+### Design
+- 🎨 Figma
 
-- **Installation**
+## 🚀 Getting Started
 
-  1.  Download the APK
-  2.  Install the APK on your device
+### Prerequisites
+- 📱 Android device
+- 🌐 Internet connection
 
-- **Register**
+### Installation Steps
+1. 📥 Download the APK
+2. 🔧 Install on your device
+3. 📧 Register with your email
 
-  1.  Open Easytour application
-  2.  Register your email address
+## 🌈 How to Use
 
-# Usage
-1. Use the search bar to find destinations.
-2. Apply filters (city, price, rating) to refine your search.
-3. Save your favorite destinations for future reference.
-4. See various information related to tourist attractions 
+1. 🔎 Search destinations 
+2. 🎚️ Apply smart filters
+3. ❤️ Save favorite spots
+4. 📖 Explore detailed attraction information
 
-# Product
+## 🔗 Project Resources
 
-<!-- 1. [GetLoc Apps](https://storage.googleapis.com/getloc-314510.appspot.com/getloc-1.0.apk)
-2. [Web Service](http://getloc-314510.et.r.appspot.com/) -->
-   <br>
+- [Main Repository](/)
+- [Android Development Branch](/)
+- [Cloud Computing Branch](/)
+- [Machine Learning Branch](https://github.com/RaffiDM/capstone-easytour/tree/Machine-Learning)
 
-# Technology Used
+## 🙏 Acknowledgments
 
-1. Machine Learning
-   - [Tensorflow](https://www.tensorflow.org/)
-   - [Python](https://www.python.org/)
-2. Android Development
-   - [Kotlin](https://kotlinlang.org/)
-3. Cloud Computing
-    - [Google Cloud Platform](https://console.cloud.google.com/)
-4. Design
-   - [Figma](https://www.figma.com/)
-     <br>
+<div align="center">
+  <img src="https://www.dicoding.com/blog/wp-content/uploads/2020/12/Cover.png" alt="Dicoding" width="500">
+</div>
 
+---
 
-# Acknowledgments
-
-<img src="https://www.dicoding.com/blog/wp-content/uploads/2020/12/Cover.png" />
+**Happy Exploring with Easytour! 🌍✈️**
