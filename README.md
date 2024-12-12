@@ -63,4 +63,4 @@ _This is the Profile and setting page, search and filter page, and favorite page
 ## Installation 🚀  
 1. Clone the repository:  
    ```bash
-   git clone https://github.com/YourUsername/EasyTour.git
+   git clone https://github.com/RaffiDM/capstone-easytour.git
