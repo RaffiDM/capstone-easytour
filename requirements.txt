@@ -1,0 +1,13 @@
+gunicorn
+pandas
+numpy
+matplotlib
+seaborn
+tensorflow
+scikit-learn
+joblib
+faker
+Flask
+firebase_admin
+requests
+fuzzywuzzy
