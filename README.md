@@ -1,12 +1,12 @@
 # EasyTour 🌍  
-**EasyTour** is a modern tourism application designed to make exploring new destinations easier and more exciting based on your interest. Built with Kotlin and Android Studio, the app leverages powerful technologies such as Retrofit for API communication, Room Database for offline storage, and Firebase for cloud integration. Whether you're planning a trip or just dreaming of your next adventure, EasyTour provides all the tools you need to discover and save the perfect destinations.  
+**EasyTour** is a modern tourism application designed to make exploring new destinations easier and more exciting based on your interest. Built with Kotlin and Android Studio, the app leverages powerful technologies such as Retrofit for API, and Room Database for offline storage.
 
 ---
 
 ## Features ✨  
 
 ### 1. **Explore Destinations**  
-- Discover a wide range of tourist attractions worldwide, categorized by city, type, or popularity.  
+- Discover a wide range of tourist attractions in Indonesia, categorized by city, type, or popularity.  
 - Search destinations by keyword to find exactly what you’re looking for.  
 
 ### 2. **Detailed Destination Information**  
@@ -46,9 +46,7 @@
 
 ### Backend   
 - **Retrofit**: For API communication, handling HTTP requests, and fetching real-time destination data.  
-- **Room Database**: A local database for storing user data, favorites, and search history for offline support.  
-- **Firebase Cloud Storage**: Used to securely sync and store user data in the cloud.  
-
+- **Room Database**: A local database for storing user data, favorites, and search history for offline support. 
 ---
 
 ## Preview Mobile app
