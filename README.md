@@ -24,18 +24,163 @@ Below we will explain each endpoint of the URL about what the **API** does, the 
 
 ```JSON
   {
-    "email": "johndoexample@com"
-    "password": "securepassword"
+    "email": "johndoe@example.com",
+    "password": "securepassword",
     "username": "Johndoe"
   }
 ```
 **Response**
 ```JSON
-{
-  "message": "Email successfully registered"
-  "status": "success"
-}
+  {
+    "email": "johndoe@example.com",
+    "error": false,
+    "message": "User Johndoe registered successfully!",
+    "userID": "61",
+    "username": "Johndoe"
+  }
 ```
 
 
+**endpoint:**
+> /login
+
+**Method:**
+> POST
+
+**Example URL**
+> https://app-service-13797535012.asia-southeast2.run.app/login
+
+```JSON
+  {
+    "email": "johndoe@example.com",
+    "password": "securepassword"
+  }
+```
+**Response**
+```JSON
+  {
+    "email": "johndoe@example.com",
+    "error": false,
+    "message": "Login successful.",
+    "userID": "61",
+    "username": "Johndoe"
+  }
+```
+
+
+**endpoint:**
+> /categories
+
+**Method:**
+> POST
+
+**Example URL**
+> https://app-service-13797535012.asia-southeast2.run.app/categories
+
+```JSON
+  {
+    "userID": "61",
+    "TamanHiburan": true,
+    "Budaya": false,
+    "Bahari": true,
+    "CagarAlam": false,
+    "PusatPerbelanjaan": true, 
+    "TempatIbadah": false
+  }
+```
+**Response**
+```JSON
+  {
+    "category_preferences": {
+        "Bahari": true,
+        "Budaya": false,
+        "CagarAlam": false,
+        "PusatPerbelanjaan": true,
+        "TamanHiburan": true,
+        "TempatIbadah": false
+    },
+    "error": false,
+    "message": "Category preferences updated successfully."
+  }
+```
+
+
+**endpoint:**
+> /home
+
+**Method:**
+> POST
+
+**Example URL**
+> https://app-service-13797535012.asia-southeast2.run.app/home
+
+```JSON
+  {
+    "userID": "61"
+  }
+```
+**Response**
+```JSON
+  {
+    "code": 200,
+    "data": [
+        {
+            "ID": 1,
+            "category": "Bahari",
+            "category_match": true,
+            "city": "Yogyakarta",
+            "description": "Pantai Sanglen. Lokasinya berada di Desa Kemadang, Gunung Kidul. Pantai indah yang satu ini memang terdengar asing di telinga, namun ternyata pantai ini menyimpan keindahan yang sangat menenangkan. Ke...",
+            "explanation": "termasuk dalam kategori yang sama (Bahari)",
+            "image_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AWYs27wgh_qhce-HAhIre4sQggK6wxmG2crajngpzVMTdeyo7RygpnN7PG5TKG6aU9LF_uH4t6AMr96a-YfrkL1TjDUvQA__vhT168tDinePwnLC1DuG6PiOMCHgzKR-_I8f2JhhHYQy2pj9Rh-0h5iXjKQ24YcVKgeRtCDMbd-jlIDv6ZGn&key=AIzaSyA7YpgX2ISV3iHdJvGvaCEoW8WTbNYD0Cw",
+            "name": "Pantai Sanglen",
+            "price": "Rp 10,000",
+            "rating": 4.5
+        },...
+    ],
+    "error": false
+  }
+```
+
+
+**endpoint:**
+> /filter
+
+**Method:**
+> POST
+
+**Example URL**
+> https://app-service-13797535012.asia-southeast2.run.app/filter
+
+```JSON
+  {
+    "userID" : "61",
+    "city" : "Surabaya",
+    "price_min" : 5000,
+    "price_max" : 100000,
+    "rating_min" : 4,
+    "rating_max" : 4.4,
+    "sorting" : "rating_desc"
+  }
+```
+**Response**
+```JSON
+  {
+    "code": 200,
+    "data": [
+        {
+            "ID": 1,
+            "category": "Taman Hiburan",
+            "category_match": true,
+            "city": "Surabaya",
+            "description": "Surabaya menjadi kota besar yang sering menjadi tempat tujuan wisata. Berbagai tempat belanja dari tradisional hingga modern ada di Ibukota Jawa Timur ini. Namun, apakah tidak bosan wisata belanja saj...",
+            "explanation": "termasuk dalam kategori yang sama (Taman Hiburan)",
+            "image_url": "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=AWYs27wRGPXi8lxo8MtHtdFEZ2u7Q6g4OWlJcUspvVUvVYxxBtqx3VM33ihxbMuBp-oU3oNoRfL4F_fj4ZjiCNk8Bzmsf2KjyYl4CdAAL0Pwo_mBPyJ-X6rYT1EPZRWSANi5KbLPEgbp3C-6YmcUKgYnCh7u6Y6734HYA-1AT8O5CLkwxfKz&key=AIzaSyA7YpgX2ISV3iHdJvGvaCEoW8WTbNYD0Cw",
+            "name": "Surabaya North Quay",
+            "price": "Rp 50,000",
+            "rating": 4.4
+        },...
+    ],
+    "error": false
+  }
+```
 
