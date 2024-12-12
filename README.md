@@ -1,87 +1,69 @@
-# ✈️ Easytour App 🌍 
-
-<div align="center">
-  <img src="Logo/Easytour Logo 2.png" alt="Easytour Logo" width="300">
-</div>
-
-## 🌟 Project Overview
-
-**Easytour** is a revolutionary travel application designed to transform tourism experiences in Indonesia by uncovering hidden gems and connecting travelers with unique destinations.
-
-### 💡 Our Mission
-
-Indonesia's tourism potential is vast and largely unexplored. Easytour aims to:
-- 🔍 Discover lesser-known destinations
-- 🤖 Leverage advanced machine learning algorithms
-- 💼 Support local economies
-- 🌍 Promote sustainable tourism
-
-## 🚀 Key Features
-
-- **Personalized Recommendations**: AI-powered destination suggestions
-- **Comprehensive Filters**: Search by city, price, and rating
-- **Favorite Destinations**: Save and plan your dream trips
-- **Detailed Information**: In-depth insights about tourist attractions
-
-## 👥 Our Team
-
-### Team ID: C242-PS466
-
-| Name | Role | Specialization |
-|------|------|----------------|
-| Faiz Noor Adhytia | M233B4KY1368 | Machine Learning |
-| Raffi Dzaky Mahendra | M233B4KY3577 | Machine Learning |
-| Souw Timotius Alvin Ferdinand | M233B4KY4197 | Machine Learning |
-| Richard Fernando Arya Mulyadi | C233B4KY3811 | Cloud Computing |
-| Michael Johan Handoko | C233B4KY2483 | Cloud Computing |
-| Nathanael Chrystian Prasetyo | A233B4KY3268 | Android Development |
-
-## 🔧 Technologies Powering Easytour
-
-### Machine Learning
-- 🐍 Python
-- 🤖 TensorFlow
-
-### Mobile Development
-- 💻 Kotlin
-
-### Cloud Infrastructure
-- ☁️ Google Cloud Platform
-
-### Design
-- 🎨 Figma
-
-## 🚀 Getting Started
-
-### Prerequisites
-- 📱 Android device
-- 🌐 Internet connection
-
-### Installation Steps
-1. 📥 Download the APK
-2. 🔧 Install on your device
-3. 📧 Register with your email
-
-## 🌈 How to Use
-
-1. 🔎 Search destinations 
-2. 🎚️ Apply smart filters
-3. ❤️ Save favorite spots
-4. 📖 Explore detailed attraction information
-
-## 🔗 Project Resources
-
-- [Main Repository](/)
-- [Android Development Branch](/)
-- [Cloud Computing Branch](/)
-- [Machine Learning Branch](https://github.com/RaffiDM/capstone-easytour/tree/Machine-Learning)
-
-## 🙏 Acknowledgments
-
-<div align="center">
-  <img src="https://www.dicoding.com/blog/wp-content/uploads/2020/12/Cover.png" alt="Dicoding" width="500">
-</div>
+# EasyTour 🌍  
+**EasyTour** is a modern tourism application designed to make exploring new destinations easier and more exciting based on your interest. Built with Kotlin and Android Studio, the app leverages powerful technologies such as Retrofit for API communication, Room Database for offline storage, and Firebase for cloud integration. Whether you're planning a trip or just dreaming of your next adventure, EasyTour provides all the tools you need to discover and save the perfect destinations.  
 
 ---
 
-**Happy Exploring with Easytour! 🌍✈️**
+## Features ✨  
+
+### 1. **Explore Destinations**  
+- Discover a wide range of tourist attractions worldwide, categorized by city, type, or popularity.  
+- Search destinations by keyword to find exactly what you’re looking for.  
+
+### 2. **Detailed Destination Information**  
+- Access comprehensive details about each destination, including:  
+  - Descriptions  
+  - Photos  
+  - Ratings  
+  - Pricing information    
+
+### 3. **Favorites**  
+- Bookmark your favorite places to create a personalized travel list.  
+- View and manage saved destinations in the Favorites section.  
+
+### 4. **Filters**  
+- Refine your search results by applying filters for:  
+  - Location (city).  
+  - Price range.  
+  - Ratings (e.g., top-rated). 
+
+### 5. **Offline Support**  
+- Save important data like previously viewed destinations and favorites locally for offline access.  
+
+### 6. **User Profile Management**  
+- Sync user preferences and favorites across devices using cloud storage.   
+
+---
+
+## Technologies Used 🛠️  
+
+### Software   
+- **Kotlin**: The main programming language for Android development.  
+- **Android Studio**: IDE for building and testing the application.  
+
+### Frontend   
+- **Material Design**: A modern, user-friendly interface design standard for consistent and intuitive user experience.  
+- **RecyclerView**: Used for displaying and managing destination lists with smooth scrolling.  
+
+### Backend   
+- **Retrofit**: For API communication, handling HTTP requests, and fetching real-time destination data.  
+- **Room Database**: A local database for storing user data, favorites, and search history for offline support.  
+- **Firebase Cloud Storage**: Used to securely sync and store user data in the cloud.  
+
+---
+
+## Preview Mobile app
+## Preview 🖼️  
+Below are some screenshots of **EasyTour** to give you a sneak peek:  
+
+### Home Screen  
+_This is the login and register page, a home page that provide places based on user interest, detail page, and search page ._  
+(Logo/15.png)  
+
+### Detail Screen  
+_This is the Profile and setting page, search and filter page, and favorite page._  
+(Logo/16.png)  
+
+## Installation 🚀  
+1. Clone the repository:  
+   ```bash
+   git clone https://github.com/YourUsername/EasyTour.git

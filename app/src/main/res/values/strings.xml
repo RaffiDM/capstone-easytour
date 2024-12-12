@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">Easy Tour</string>
+    <string name="profile">Profile</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Favorite</string>
+    <string name="title_notifications">Search</string>
+    <string name="title_setting">Settings</string>
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+<string name="enable_dark_mode">Aktifkan Mode Gelap</string>
+    <string name="dark_mode">Mode Gelap</string>
+    <string name="notif">Notifikasi</string>
+    <string name="enable_notif">Aktifkan</string>
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="signup">Daftar</string>
+    <string name="login">Masuk</string>
+    <string name="message_welcome_page">Mau belajar Android, iOS, Machine Learning, Cloud, Front-End, Back-End, dan bidang IT lainnya? Di Dicoding aja!</string>
+    <string name="title_welcome_page">Selamat Datang di Story App!</string>
+    <string name="title_signup_page">Lengkapi data dirimu di bawah ini ya</string>
+    <string name="email">Email</string>
+    <string name="deskripsi">Deskripsi</string>
+    <string name="password">Password</string>
+    <string name="message_login_page">Masukkan dulu datamu ya</string>
+    <string name="title_login_page">Pantau Storymu dan Temanmu!</string>
+    <string name="name">Nama</string>
+    <string name="add">Tambah</string>
+    <string name="upload">Unggah</string>
+    <string name="empty_image_warning">Data Kosong</string>
+    <string name="camera">Kamera</string>
+    <string name="galeri">Galeri</string>
+    <string name="logout2">Keluar</string>
+    <string name="message_main_page">Selamat Data di Story App!</string>
+    <string name="greeting">Halo %1$s,</string>
+    <string name="logout">Keluar</string>
+    <string name="hint_password">20</string>
+    <string name="password_error">Password tidak boleh kurang dari 8 karakter</string>
+    <string name="email_error">Format email salah</string>
+    <string name="daftarkan">Anda belum memiliki akun? Daftarkan diri anda.</string>
+    <string name="hai">hai</string>
+    <string name="select_categories">Select Categories</string>
+    <string name="done">Done</string>
+    <string name="category_name">Category Name</string>
+    <string name="media_cover_description">Deskripsi\n</string>
+    <string name="title_filter">Filter</string>
+    <string name="searchbar_hint">Masukkan Kata!</string>
+    <string name="informasi">Deskripsi\n</string>
+    <string name="google_sign_in">Sign In</string>
+    <string name="default_web_client_id">1035303246521-pilb8rfd12a8ktptkgibf31macrh1dh5.apps.googleusercontent.com</string>
+    <string name="welcome_to_easytour">Welcome to Easytour</string>
+    <string name="let_s_search_nsomething_good">Let\'s Search\nSomething Good</string>
+    <string name="search">Search</string>
+    <string name="cancel">Cancel</string>
+</resources>

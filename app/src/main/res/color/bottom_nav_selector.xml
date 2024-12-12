@@ -1,0 +1,5 @@
+<!-- res/color/bottom_nav_selector.xml -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true" android:color="#1E88E5" /> <!-- Ikon/Teks aktif -->
+    <item android:state_checked="false" android:color="?attr/colorOnSurface" /> <!-- Ikon/Teks tidak aktif -->
+</selector>
