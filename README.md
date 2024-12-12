@@ -1,87 +1,24 @@
-# ✈️ Easytour App 🌍 
+# Cloud Computing
+As a **Cloud Computing** students, we are assigned to deploying our models to [Google Cloud Platform](https://cloud.google.com/?hl=en) by using [cloud run](https://cloud.google.com/run?hl=en), creating **RESTful APIs** for our app to be able to communicate and get the data from the model, as well as making the **Login** and **Register API**, and enable database to store our data using [Firestore](https://cloud.google.com/firestore?hl=en)
 
-<div align="center">
-  <img src="Logo/Easytour Logo 2.png" alt="Easytour Logo" width="300">
-</div>
+# RESTful API
+In creating the **RESTful API** we are using [Python](https://github.com/python) programming language while also using the [Flask Framework](https://flask.palletsprojects.com/en/stable/) tools to make a stable **API**. Our **API** returns data in **JSON** format for each **URL**
 
-## 🌟 Project Overview
+# Places API
+We are currently taking advantage of the [Google Maps platform](https://developers.google.com/maps) by using [Places API](https://developers.google.com/maps/documentation/places/web-service/overview) to provide our application with the places details and the places picture of the destination that the users are looking for
 
-**Easytour** is a revolutionary travel application designed to transform tourism experiences in Indonesia by uncovering hidden gems and connecting travelers with unique destinations.
+# RESTful API link destination
+Below we will explain each endpoint of the URL about what the **API** does, the content, and the response we get from the **API**
 
-### 💡 Our Mission
+**Base URL:**
+> https://app-service-13797535012.asia-southeast2.run.app
 
-Indonesia's tourism potential is vast and largely unexplored. Easytour aims to:
-- 🔍 Discover lesser-known destinations
-- 🤖 Leverage advanced machine learning algorithms
-- 💼 Support local economies
-- 🌍 Promote sustainable tourism
+**endpoint:**
+> /login
 
-## 🚀 Key Features
+**Method:**
+> POST
 
-- **Personalized Recommendations**: AI-powered destination suggestions
-- **Comprehensive Filters**: Search by city, price, and rating
-- **Favorite Destinations**: Save and plan your dream trips
-- **Detailed Information**: In-depth insights about tourist attractions
+**Example URL**
+> https://app-service-13797535012.asia-southeast2.run.app/login
 
-## 👥 Our Team
-
-### Team ID: C242-PS466
-
-| Name | Role | Specialization |
-|------|------|----------------|
-| Faiz Noor Adhytia | M233B4KY1368 | Machine Learning |
-| Raffi Dzaky Mahendra | M233B4KY3577 | Machine Learning |
-| Souw Timotius Alvin Ferdinand | M233B4KY4197 | Machine Learning |
-| Richard Fernando Arya Mulyadi | C233B4KY3811 | Cloud Computing |
-| Michael Johan Handoko | C233B4KY2483 | Cloud Computing |
-| Nathanael Chrystian Prasetyo | A233B4KY3268 | Android Development |
-
-## 🔧 Technologies Powering Easytour
-
-### Machine Learning
-- 🐍 Python
-- 🤖 TensorFlow
-
-### Mobile Development
-- 💻 Kotlin
-
-### Cloud Infrastructure
-- ☁️ Google Cloud Platform
-
-### Design
-- 🎨 Figma
-
-## 🚀 Getting Started
-
-### Prerequisites
-- 📱 Android device
-- 🌐 Internet connection
-
-### Installation Steps
-1. 📥 Download the APK
-2. 🔧 Install on your device
-3. 📧 Register with your email
-
-## 🌈 How to Use
-
-1. 🔎 Search destinations 
-2. 🎚️ Apply smart filters
-3. ❤️ Save favorite spots
-4. 📖 Explore detailed attraction information
-
-## 🔗 Project Resources
-
-- [Main Repository](/)
-- [Android Development Branch](/)
-- [Cloud Computing Branch](/)
-- [Machine Learning Branch](https://github.com/RaffiDM/capstone-easytour/tree/Machine-Learning)
-
-## 🙏 Acknowledgments
-
-<div align="center">
-  <img src="https://www.dicoding.com/blog/wp-content/uploads/2020/12/Cover.png" alt="Dicoding" width="500">
-</div>
-
----
-
-**Happy Exploring with Easytour! 🌍✈️**
