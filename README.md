@@ -7,6 +7,51 @@ In creating the **RESTful API** we are using [Python](https://github.com/python)
 # Places API
 We are currently taking advantage of the [Google Maps platform](https://developers.google.com/maps) by using [Places API](https://developers.google.com/maps/documentation/places/web-service/overview) to provide our application with the places details and the places picture of the destination that the users are looking for
 
+```Python
+search_url = "https://maps.googleapis.com/maps/api/place/findplacefromtext/json"
+        search_params = {
+            "input": place_name,
+            "inputtype": "textquery",
+            "fields": "place_id",
+            "key": API_KEY
+        }
+        search_response = requests.get(search_url, params=search_params)
+        search_response.raise_for_status() 
+        search_data = search_response.json()
+```
+from the destination that the user input, we use that data and send it to the places API using the link that are set in the search_url variable with the parameter from the search_param to get the place Id that later would be use to get the places details and places photo
+
+```Python
+place_id = search_data['candidates'][0]['place_id']
+
+        
+        details_url = "https://maps.googleapis.com/maps/api/place/details/json"
+        details_params = {
+            "place_id": place_id,
+            "fields": "photos",
+            "key": API_KEY
+        }
+```
+after we got the data within the response, we put it into the place_id variable and use it to search the places details using the place_id
+
+```Python
+details_response = requests.get(details_url, params=details_params)
+        details_response.raise_for_status()
+        details_data = details_response.json()
+
+        photos = details_data.get('result', {}).get('photos', [])
+        if not photos:
+            return None
+
+        photo_reference = photos[0]['photo_reference']
+
+        
+        photo_url = f"https://maps.googleapis.com/maps/api/place/photo"
+        return f"{photo_url}?maxwidth=400&photo_reference={photo_reference}&key={API_KEY}"
+```
+and using the place details data,  we take the picture related to the data and build it into a URL so that it can be fetched to the app.
+
+
 # RESTful API link destination
 Below we will explain each endpoint of the URL about what the **API** does, the content, and the response we get from the **API**
 
