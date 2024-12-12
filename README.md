@@ -52,12 +52,11 @@
 ---
 
 ## Preview Mobile app
-## Preview 🖼️  
-Below are some screenshots of **EasyTour** to give you a sneak peek:  
 
-### Home Screen  
-_This is the login and register page, a home page that provide places based on user interest, detail page, and search page ._  
-(Logo/15.png)  
+<div align="center">
+  <img src="Logo/15.png" alt="Easytour Logo" width="300">
+   <img src="Logo/16.png" alt="Easytour Logo" width="300">
+</div>
 
 ### Detail Screen  
 _This is the Profile and setting page, search and filter page, and favorite page._  
