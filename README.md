@@ -56,11 +56,7 @@
    <img src="Logo/16.png" alt="Easytour Logo" width="300">
 </div>
 
-### Detail Screen  
-_This is the Profile and setting page, search and filter page, and favorite page._  
-(Logo/16.png)  
-
 ## Installation 🚀  
 1. Clone the repository:  
    ```bash
-   git clone https://github.com/RaffiDM/capstone-easytour.git
+   git clone --branch Mobile-Developmet https://github.com/RaffiDM/capstone-easytour.git
