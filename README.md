@@ -22,6 +22,11 @@ Below we will explain each endpoint of the URL about what the **API** does, the 
 **Example URL**
 > https://app-service-13797535012.asia-southeast2.run.app/register
 
+this endpoint is used to register the user email and password into the datababase with 3 value :
+> email <br>
+> password <br>
+> username
+
 ```JSON
   {
     "email": "johndoe@example.com",
@@ -50,6 +55,10 @@ Below we will explain each endpoint of the URL about what the **API** does, the 
 **Example URL**
 > https://app-service-13797535012.asia-southeast2.run.app/login
 
+this endpoint's function is to authenticate the user, checking if their email has been set in the database yet or not using 2 parameter:
+> email <br>
+> password <br>
+
 ```JSON
   {
     "email": "johndoe@example.com",
@@ -76,6 +85,14 @@ Below we will explain each endpoint of the URL about what the **API** does, the 
 
 **Example URL**
 > https://app-service-13797535012.asia-southeast2.run.app/categories
+
+this endpoint is use to sent the category that the user wanted to search with the value of:
+> taman hiburan <br>
+> budaya <br>
+> bahari <br>
+> cagar alam <br>
+> pusat perbelanjaan <br>
+> tempat ibadah <br>
 
 ```JSON
   {
@@ -114,6 +131,8 @@ Below we will explain each endpoint of the URL about what the **API** does, the 
 **Example URL**
 > https://app-service-13797535012.asia-southeast2.run.app/home
 
+this endpoint is used to direct the user to the homepage and send the recommendation based on the category that has been checklist by the user using the userId
+
 ```JSON
   {
     "userID": "61"
@@ -135,7 +154,7 @@ Below we will explain each endpoint of the URL about what the **API** does, the 
             "name": "Pantai Sanglen",
             "price": "Rp 10,000",
             "rating": 4.5
-        },...
+        },
     ],
     "error": false
   }
@@ -150,6 +169,14 @@ Below we will explain each endpoint of the URL about what the **API** does, the 
 
 **Example URL**
 > https://app-service-13797535012.asia-southeast2.run.app/filter
+
+this endpoint is used to send the value that the user wants using the parameter stated below:
+> city <br>
+> price min <br>
+> price max <br>
+> rating min <br>
+> rating max <br>
+> sorting
 
 ```JSON
   {
@@ -178,7 +205,7 @@ Below we will explain each endpoint of the URL about what the **API** does, the 
             "name": "Surabaya North Quay",
             "price": "Rp 50,000",
             "rating": 4.4
-        },...
+        },
     ],
     "error": false
   }
