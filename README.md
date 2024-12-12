@@ -32,7 +32,7 @@ Indonesia's tourism potential is vast and largely unexplored. Easytour aims to:
 
 ### Team ID: C242-PS466
 
-| Name | Role | Specialization |
+| Name | STUDENT ID | LEARNING PATH |
 |------|------|----------------|
 | Faiz Noor Adhytia | M233B4KY1368 | Machine Learning |
 | Raffi Dzaky Mahendra | M233B4KY3577 | Machine Learning |
