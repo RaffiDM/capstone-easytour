@@ -14,11 +14,28 @@ Below we will explain each endpoint of the URL about what the **API** does, the 
 > https://app-service-13797535012.asia-southeast2.run.app
 
 **endpoint:**
-> /login
+> /register
 
 **Method:**
 > POST
 
 **Example URL**
-> https://app-service-13797535012.asia-southeast2.run.app/login
+> https://app-service-13797535012.asia-southeast2.run.app/register
+
+```JSON
+  {
+    "email": "johndoexample@com"
+    "password": "securepassword"
+    "username": "Johndoe"
+  }
+```
+**Response**
+```JSON
+{
+  "message": "Email successfully registered"
+  "status": "success"
+}
+```
+
+
 
