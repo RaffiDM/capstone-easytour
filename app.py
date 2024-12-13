@@ -6,6 +6,7 @@ import joblib
 from functools import lru_cache
 from sklearn.metrics.pairwise import cosine_similarity
 from sklearn.feature_extraction.text import TfidfVectorizer
+from fuzzywuzzy import process
 
 app = Flask(__name__)
 
@@ -24,16 +25,13 @@ def prepare_place_features(tourism_df):
     return tourism_df
 
 def load_place_name_aliases():
-    """
-    Membuat mapping antara nama resmi dan alias tempat wisata
-    """
     aliases = {
         'monas': 'Monumen Nasional',
         'dufan': 'Dunia Fantasi',
         'tmii': 'Taman Mini Indonesia Indah (TMII)',
         'taman mini': 'Taman Mini Indonesia Indah (TMII)',
         'ancol': 'Taman Impian Jaya Ancol',
-        'Ragunan': 'Kebun Binatang Ragunan',
+        'ragunan': 'Kebun Binatang Ragunan',
         'marina': 'Pantai Marina',
         'seaworld': 'Sea World',
         'grand indonesia': 'Grand Indonesia Mall',
@@ -62,6 +60,33 @@ def load_place_name_aliases():
     }
     return aliases
 
+def fuzzy_match_place_name(place_name, tourism_df, threshold=80):
+    # Load aliases
+    aliases = load_place_name_aliases()
+    
+    # Normalisasi input
+    normalized_place_name = place_name.lower().strip()
+    
+    # Pertama, cek apakah ada di aliases
+    if normalized_place_name in aliases:
+        return aliases[normalized_place_name]
+    
+    # Ambil semua nama tempat unik dari dataset
+    place_names = tourism_df['Place_Name'].unique().tolist()
+    
+    # Tambahkan aliases ke daftar nama tempat
+    place_names.extend(list(aliases.values()))
+    place_names = list(set(place_names))  # Hapus duplikat
+    
+    # Gunakan fuzzywuzzy untuk mencari kecocokan terdekat
+    best_match = process.extractOne(normalized_place_name, place_names)
+    
+    # Kembalikan nama tempat terdekat jika di atas threshold
+    if best_match[1] >= threshold:
+        return best_match[0]
+    
+    return place_name  # Kembalikan nama asli jika tidak ada yang cocok
+
 def predict_category(model, tfidf_vectorizer, label_encoder, text):
     input_vector = tfidf_vectorizer.transform([text]).toarray()
     prediction = model.predict(input_vector)
@@ -79,24 +104,17 @@ def calculate_neural_network_similarity(input_probs, all_places_probs):
     return cosine_similarity(input_probs.reshape(1, -1), all_places_probs)[0]
 
 def get_recommendations_nn(place_name, tourism_df, model, tfidf_vectorizer, label_encoder, n_recommendations=15):
-    # Load place name aliases
-    aliases = load_place_name_aliases()
-    
-    # Normalize place name (lowercase and handle aliases)
-    normalized_place_name = place_name.lower().strip()
-    
-    # Check if the place name is an alias
-    if normalized_place_name in aliases:
-        normalized_place_name = aliases[normalized_place_name]
+    # Tambahkan fuzzy matching sebelum proses rekomendasi
+    matched_place_name = fuzzy_match_place_name(place_name, tourism_df)
     
     # Prepare place features
     df = prepare_place_features(tourism_df.copy())
     
     # Case-insensitive search for the input place
-    input_place = df[df['Place_Name'].str.lower() == normalized_place_name.lower()]
+    input_place = df[df['Place_Name'].str.lower() == matched_place_name.lower()]
     
     if input_place.empty:
-        input_text = normalized_place_name
+        input_text = matched_place_name
     else:
         input_text = input_place['text_features'].iloc[0]
     
@@ -115,8 +133,8 @@ def get_recommendations_nn(place_name, tourism_df, model, tfidf_vectorizer, labe
     nn_similarities = calculate_neural_network_similarity(input_probs, all_predictions)
     df['nn_similarity'] = nn_similarities
     
-    # Exclude the original place from recommendations based on normalized place name
-    df_recommendations = df[df['Place_Name'].str.lower() != normalized_place_name.lower()]
+    # Exclude the original place from recommendations based on matched place name
+    df_recommendations = df[df['Place_Name'].str.lower() != matched_place_name.lower()]
     
     # Sort recommendations based on neural network similarity
     recommendations = df_recommendations.nlargest(n_recommendations, 'nn_similarity')
@@ -143,11 +161,7 @@ def get_recommendations_nn(place_name, tourism_df, model, tfidf_vectorizer, labe
         }
         detailed_recommendations.append(similarity_details)
     
-    return detailed_recommendations, predicted_category, category_probs
-
-# @app.route('/')
-# def home():
-#     return render_template('index.html')
+    return detailed_recommendations, predicted_category, category_probs, matched_place_name
 
 @app.route('/predict', methods=['POST'])
 def predict():
@@ -168,7 +182,7 @@ def predict():
         place_name = data['place_name']
         model, tfidf_vectorizer, label_encoder, tourism_df = load_models()
         
-        recommendations, category, category_probs = get_recommendations_nn(
+        recommendations, category, category_probs, matched_place_name = get_recommendations_nn(
             place_name=place_name,
             tourism_df=tourism_df,
             model=model,
@@ -193,4 +207,3 @@ def predict():
 
 if __name__ == '__main__':
     app.run(debug=True)
-
