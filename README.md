@@ -10,7 +10,7 @@ This is a machine learning-based tourism recommendation system that uses content
 - Content-based recommendation using neural network similarity
 - TF-IDF vectorization for text feature extraction
 - Multi-class classification of tourism destinations
-- Flask-based web API for recommendations
+- Flask endpoint REST API for recommendations
 - Supports place name aliases for better matching
 
 ## Project Structure
