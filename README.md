@@ -50,10 +50,6 @@
 ---
 
 ## Preview Mobile app
-<<<<<<< HEAD
-=======
-
->>>>>>> b511c6fa10a3364353b7aece31c8af1c068b15e7
 <div align="center">
   <img src="Logo/15.png" alt="Easytour Logo" width="300">
    <img src="Logo/16.png" alt="Easytour Logo" width="300">
