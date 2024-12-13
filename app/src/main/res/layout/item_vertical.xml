@@ -31,7 +31,6 @@
             android:layout_marginStart="8dp"
             android:layout_toEndOf="@id/media_cover"
             android:fontFamily="@font/caveat"
-            android:textColor="@color/black"
             android:textSize="16sp"
             android:textStyle="bold" />
 
@@ -71,7 +70,6 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="4dp"
                 android:fontFamily="@font/caveat"
-                android:textColor="@color/black"
                 android:textSize="12sp" />
 
             <TextView
@@ -80,7 +78,6 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="4dp"
                 android:fontFamily="@font/caveat"
-                android:textColor="@color/black"
                 android:textSize="12sp" />
 
             <TextView
@@ -89,7 +86,6 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="4dp"
                 android:fontFamily="@font/caveat"
-                android:textColor="@color/black"
                 android:textSize="12sp" />
 
             <!-- Number of reviews -->
