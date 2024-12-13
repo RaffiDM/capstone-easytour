@@ -49,7 +49,6 @@ def load_place_name_aliases():
     aliases = {
         'monas': 'Monumen Nasional',
         'dufan': 'Dunia Fantasi',
-        'dunia fantasu': 'Dunia Fantasi',  # Tambahan typo
         'tmii': 'Taman Mini Indonesia Indah (TMII)',
         'taman mini': 'Taman Mini Indonesia Indah (TMII)',
         'ancol': 'Taman Impian Jaya Ancol',
